@@ -140,6 +140,27 @@ header {
     color: rgb(94, 94, 94);
 }
 
+.contact {
+    max-width: 900px;
+    padding: 2rem;
+    background-color: var(--primary-color);
+    border-radius: 15px;
+    color: white;
+}
+
+.map img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.contact h2 {
+    margin: 1rem 0;
+}
+
+.contact h2:first-of-type {
+    margin-top: 0;
+}
+
 footer {
     display: flex;
     justify-content: center;
