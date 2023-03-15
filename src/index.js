@@ -1,6 +1,10 @@
 import './style.css';
 
 const title = document.querySelector('h1');
-title.addClass.add('title');
+title.classList.add('title');
 
-console.log(title);
+const nav = document.querySelector('nav');
+nav.classList.add('nav');
+
+const links = document.querySelectorAll('.nav a');
+links[0].classList.add('active');
