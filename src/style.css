@@ -98,6 +98,48 @@ header {
     line-height: 25px;
 }
 
+.menu {
+    background-color: white;
+    padding: 3rem 4rem;
+    border-radius: 10px;
+    max-width: 700px;
+}
+
+.menu h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--secondary-color);
+}
+
+.dishes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+    gap: 2rem;
+}
+
+.dish:hover {
+    cursor: pointer;
+}
+
+.dish:hover img {
+    transform: translateY(-5px) scale(1.05);
+}
+
+.dish img {
+    width: 100%;
+    border-radius: 10px;
+    transition: .2s;
+}
+
+.dish h3 {
+    margin: 1rem 0;
+    color: var(--primary-color);
+}
+
+.dish p {
+    color: rgb(94, 94, 94);
+}
+
 footer {
     display: flex;
     justify-content: center;
