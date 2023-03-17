@@ -2,6 +2,7 @@ import './style.css';
 import load from './initialLoad';
 import home from './home';
 import menu from './menu';
+import contact from './contact';
 
 const content = document.querySelector('#content');
 
@@ -38,11 +39,14 @@ function handleTabs(e) {
                 links.homeLink.classList.remove('active');
                 links.menuLink.classList.add('active');
                 links.contactLink.classList.remove('active');
-            break;
-        case '3':
-            content.innerHTML = '';
-            content.appendChild(home());
+                break;
+            case '3':
+                content.innerHTML = '';
+                content.appendChild(contact());
             
+                links.homeLink.classList.remove('active');
+                links.menuLink.classList.remove('active');
+                links.contactLink.classList.add('active');
             break;
     
         default:
